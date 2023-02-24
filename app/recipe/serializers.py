@@ -8,6 +8,7 @@ from core.models import Recipe, Tag, Ingredient
 
 class IngredientSerializer(serializers.ModelSerializer):
     """Serializer for ingredients."""
+    name = serializers.CharField()
 
     class Meta:
         model = Ingredient
